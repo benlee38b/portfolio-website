@@ -31,7 +31,7 @@ nav{
 body {
     width: 70%;
     margin: 0px auto;
-    background-color: cornsilk;
+    background-color: #f5f3f2;
     height: 100%;
     border-radius: 5%;
     border-top-right-radius: 0%;
@@ -52,6 +52,7 @@ header {
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
+    border: solid 1px;
 }
 img {
     padding: 0%;   
@@ -71,4 +72,14 @@ h1 {
 main {
     width: 80%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 40%;
+   
+    justify-content: center;
+    grid
+}
+.bio {
+   padding: 10px;
+   margin: 10px;
+   border: solid 1px; 
 }
