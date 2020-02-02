@@ -45,7 +45,7 @@ header {
     width: 60%;
     height: 20%;
     margin: 0px auto;
-    background-color: brown;
+    background-color: #e8e1e1;
     border-radius: 10%;
     box-shadow: 10px 10px 5px #aaaaaa;
     display: flex;
@@ -64,7 +64,7 @@ img {
 }
 
 h1 {
-    color: blue;
+    color: #332c2c;
     margin: 0px auto;
     text-align: center;
 }
@@ -73,13 +73,15 @@ main {
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 40% 40%;
-   
+    grid-template-columns: 40% 40%; 
     justify-content: center;
-    grid
+    align-content: center;
+    text-align: center;
 }
 .bio {
    padding: 10px;
    margin: 10px;
    border: solid 1px; 
+   background-color: #dedce8;
+   border-radius: 10%;
 }
