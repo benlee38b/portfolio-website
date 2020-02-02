@@ -1,6 +1,66 @@
-body {
-    background-color: ;
+html {
+    animation-name: background-color;
+    animation-duration: 7000ms;
+    animation-iteration-count: infinite;
 }
+
+@keyframes background-color {
+    0% {
+      background: #CCFFFF;
+    }
+    
+    50% {
+        background: #FFCCCC;
+    }
+    100% {
+        background: #CCFFFF;
+    }
+}
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;   
+
+}
+
+body {
+    width: 80%;
+    margin: 0px auto;
+    background-color: cornsilk;
+    height: 100%;
+    border-radius: 5%;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    box-shadow: darkgrey;
+
+}
+
+
+header {
+    width: 50%;
+    margin: 0px auto;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+img {
+    padding: 0%;   
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0px auto;
+    border-radius: 100%;
+    padding: 5%;
+}
+
 h1 {
     color: blue;
+    margin: 0px auto;
+    text-align: center;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
 }
