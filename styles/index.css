@@ -1,4 +1,5 @@
 html {
+    font-family: 'Playfair Display', serif;
     animation-name: background-color;
     animation-duration: 7000ms;
     animation-iteration-count: infinite;
@@ -6,14 +7,18 @@ html {
 
 @keyframes background-color {
     0% {
-      background: #CCFFFF;
+      background: #FFCCCC;
     }
     
     50% {
-        background: #FFCCCC;
-    }
-    100% {
         background: #CCFFFF;
+    }
+    75% {
+        background: rgba(184, 231, 231, 0.863);
+    }
+    
+    100% {
+        background: #FFCCCC;
     }
 }
 nav{
@@ -24,22 +29,25 @@ nav{
 }
 
 body {
-    width: 80%;
+    width: 70%;
     margin: 0px auto;
     background-color: cornsilk;
     height: 100%;
     border-radius: 5%;
     border-top-right-radius: 0%;
     border-top-left-radius: 0%;
-    box-shadow: darkgrey;
-
+    border: solid 1px;
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 
 header {
-    width: 50%;
+    width: 60%;
+    height: 20%;
     margin: 0px auto;
     background-color: brown;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px #aaaaaa;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -47,8 +55,8 @@ header {
 }
 img {
     padding: 0%;   
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
     margin: 0px auto;
     border-radius: 100%;
     padding: 5%;
