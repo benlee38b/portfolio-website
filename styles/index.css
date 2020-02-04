@@ -1,87 +1,83 @@
 html {
     font-family: 'Playfair Display', serif;
-    animation-name: background-color;
-    animation-duration: 7000ms;
-    animation-iteration-count: infinite;
+    color: black;
 }
-
-@keyframes background-color {
-    0% {
-      background: #FFCCCC;
-    }
-    
-    50% {
-        background: #CCFFFF;
-    }
-    75% {
-        background: rgba(184, 231, 231, 0.863);
-    }
-    
-    100% {
-        background: #FFCCCC;
-    }
-}
-nav{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 80%;   
-
-}
-
 body {
-    width: 70%;
-    margin: 0px auto;
-    background-color: #f5f3f2;
-    height: 100%;
-    border-radius: 5%;
-    border-top-right-radius: 0%;
-    border-top-left-radius: 0%;
-    border: solid 1px;
-    box-shadow: 10px 10px 5px #aaaaaa;
+    background-image: url("/images/hello-i-m-nik-MAgPyHRO0AA-unsplash.jpg"); 
+    color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 }
 
-
-header {
-    width: 60%;
-    height: 20%;
-    margin: 0px auto;
-    background-color: #e8e1e1;
-    border-radius: 10%;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    border: solid 1px;
-}
-img {
-    padding: 0%;   
-    max-width: 150px;
-    max-height: 150px;
-    margin: 0px auto;
-    border-radius: 100%;
-    padding: 5%;
-}
-
-h1 {
-    color: #332c2c;
-    margin: 0px auto;
-    text-align: center;
-}
-
-main {
-    width: 80%;
-    margin: 0 auto;
+main.homepage {
     display: grid;
-    grid-template-columns: 40% 40%; 
-    justify-content: center;
-    align-content: center;
+    float: right; 
+    grid-template-columns: repeat(9, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 12px;
+    grid-row-gap: 4px;
+    width: 50%;
+    height: 100%;
+    margin-top: 15%;
+    border: solid 2px;
+    margin-right: 1%;
+}
+.name {
+    grid-area: 1 / 1 / 3 / 6; 
+    font-size: 80px;
+    text-align: left;
+    border: solid 2px;
+    align-self: center;
+}
+.role {
+    grid-area: 1 / 6 / 2 / 10; 
+    border: solid 2px;
+    font-size: 55px;
+    margin-top: 20px;
+    align-self: center;
+}
+#languages {
     text-align: center;
+    font-size: 30px;
+    justify-self: left;
+    align-self: end;
+    border: solid 2px;
+    border-radius: 25%;
+    background-color:#2891C8;
+    padding: 10px;
+    margin-left: 100px;
+    width: 100px;
 }
-.bio {
-   padding: 10px;
-   margin: 10px;
-   border: solid 1px; 
-   background-color: #dedce8;
-   border-radius: 10%;
+    
+
+div.about-me {
+    grid-area: 2 / 3 / 3 / 5; 
+    border: solid 2px; 
+    align-self: center;
+    justify-self: center;
+    font-size: 30px;
+    
 }
+div.projects {
+    grid-area: 2 / 5 / 3 / 7; 
+    border: solid 2px; 
+    align-self: center;
+    justify-self: center;
+    font-size: 30px;
+}
+div.contact-me {
+    grid-area: 2 / 7 / 3 / 9;
+    border: solid 2px;
+    align-self: center;
+    justify-self: center; 
+    font-size: 30px;
+}
+div.home-nav {
+    display: inline-block;
+}
+
+
+
