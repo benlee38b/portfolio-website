@@ -1,50 +1,50 @@
 html {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Tinos', serif;
     color: black;
 }
 body {
-    background-image: url("/images/hello-i-m-nik-MAgPyHRO0AA-unsplash.jpg"); 
+    background-image: url("/images/baclground.jpg"); 
     color: black;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
+    width: 100%;
+    height: 100%;
+    font-family: 'Mallanna', sans-serif;
 }
 
 main.homepage {
     display: grid;
-    float: right; 
-    grid-template-columns: repeat(9, 1fr); 
-    grid-template-rows: repeat(2, 1fr); 
-    grid-column-gap: 12px;
-    grid-row-gap: 4px;
-    width: 50%;
-    height: 100%;
-    margin-top: 15%;
-    border: solid 2px;
-    margin-right: 1%;
+    float: right;
+    grid-template-columns: 150px 1fr 150px; 
+    grid-template-rows: auto 1fr auto; 
+    line-height: 0;
+    position: relative;
+    white-space: nowrap;
+    top: 35vh;
+    grid-row-gap: 0;
+    right: 15vw;
+    text-sadow:rgba(0, 0, 0, 0.24) 0px 9px 7px;
 }
 .name {
-    grid-area: 1 / 1 / 3 / 6; 
-    font-size: 80px;
+    grid-column: span 3;
+    font-size: 5vh ;
     text-align: left;
-    border: solid 2px;
-    align-self: center;
+    align-self: end;
+    justify-self: end;
 }
 .role {
-    grid-area: 1 / 6 / 2 / 10; 
-    border: solid 2px;
-    font-size: 55px;
-    margin-top: 20px;
-    align-self: center;
+    grid-column: span 3; 
+    font-size: 4.2vh;
+    align-self: start;
 }
 #languages {
     text-align: center;
     font-size: 30px;
     justify-self: left;
     align-self: end;
-    border: solid 2px;
     border-radius: 25%;
     background-color:#2891C8;
     padding: 10px;
@@ -53,30 +53,78 @@ main.homepage {
 }
     
 
-div.about-me {
-    grid-area: 2 / 3 / 3 / 5; 
-    border: solid 2px; 
-    align-self: center;
+.about {
+    grid-column: span 1;  
+    align-self: end;
+    justify-self: left;
+    font-size: 4vh; 
+    line-height: 0%;
+    position: relative;
+    right: 0.5vh;
+    bottom: 2.1vh;
+    borde: solid 2px;
+}
+.projects {
+    grid-column: span 1; 
+    align-self: end;
     justify-self: center;
-    font-size: 30px;
-    
+    font-size: 4vh;
+    position: relative;
+    right: 1.5vh;
+    bottom: 2.1vh;
+    borde: solid 2px;
 }
-div.projects {
-    grid-area: 2 / 5 / 3 / 7; 
-    border: solid 2px; 
-    align-self: center;
+.contact {
+    grid-column: span 1; 
+    align-self: end;
+    justify-self: left; 
+    font-size: 4vh;
     justify-self: center;
-    font-size: 30px;
+    margin: 0;
+    position: relative;
+    right: 3.1vh;
+    bottom: 2.1vh;
+    borde: solid 2px;
 }
-div.contact-me {
-    grid-area: 2 / 7 / 3 / 9;
-    border: solid 2px;
-    align-self: center;
-    justify-self: center; 
-    font-size: 30px;
+i {
+    color: teal;
 }
-div.home-nav {
-    display: inline-block;
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: teal;
+}
+ 
+@media screen and (max-width: 1580px) {
+    main.homepage {
+        right: 6vw;
+    }
+    .role {
+        font-size: 4vh;
+    }
+    .contact {
+        right: 1.5vh
+    }
+    .name {
+        margin-right: 5vh;
+    }
+}
+@media screen and (max-width: 1010px) {
+    .role {
+        font-size: 4.1vh;
+    }
+    .name {
+    margin-right: 2vh;
+    }
+    body {
+        background-image: url("/images/background-rotated.jpg");
+    }
+}
+@media screen and (max-width: 376px) {
+   /* cannot find a  way to center elements while in mobile mode*/
+
 }
 
 
