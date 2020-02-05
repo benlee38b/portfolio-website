@@ -38,7 +38,7 @@ main.homepage {
     grid-column: span 3; 
     font-size: 4.2vh;
     align-self: start;
-}
+}  
 #languages {
     text-align: center;
     font-size: 30px;
@@ -60,7 +60,7 @@ main.homepage {
     line-height: 0%;
     position: relative;
     right: 0.5vh;
-    bottom: 2.1vh;
+    top: 3vh;
 }
 .projects {
     grid-column: span 1; 
@@ -69,7 +69,7 @@ main.homepage {
     font-size: 4vh;
     position: relative;
     right: 1.5vh;
-    bottom: 2.1vh;
+    top: 3vh;
 }
 .contact {
     grid-column: span 1; 
@@ -80,7 +80,7 @@ main.homepage {
     margin: 0;
     position: relative;
     right: 3.1vh;
-    bottom: 2.1vh;
+    top: 3vh;
 }
 i {
     color: teal;
@@ -94,11 +94,41 @@ a:hover {
 }
 .top-nav {
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .top-nav a {
-    float: right;
+    float: none;
     padding: 2vw 4vw;
     font-size: 3.5vh;
+}
+.bio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 45vw;
+    position: relative;
+    top: 8vw;
+    left: 50vw;
+
+}
+.my-face {
+    align-self: center;
+}
+img {
+    border: solid 5px;
+    border-color: teal;
+    border-radius: 100%; 
+    width: 13vw;
+
+}
+.about-title {
+    font-size: 2.5vh;
+}
+.background {
+    font-size: 1.8vw;
+    text-align: left;
 }
 
  
@@ -107,7 +137,7 @@ a:hover {
         right: 6vw;
     }
     .role {
-        font-size: 4vh;
+        font-size: 4.5vh;
     }
     .contact {
         right: 1.5vh
@@ -122,6 +152,17 @@ a:hover {
     }
     body {
         background-image: url("/images/background-rotated.jpg");
+    }
+    .bio {
+        left: 9vw;
+        width: 70vw;
+    }
+    .background {
+        font-size: 4vw;
+    }
+    .top-nav {
+        background-color: #cbd0d6;
+        border-radius: 2%;
     }
 }
 @media screen and (max-width: 469px) {
