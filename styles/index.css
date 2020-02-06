@@ -2,7 +2,7 @@ html {
     font-family: 'Tinos', serif;
     color: black;
 }
-body {
+html {
     background-image: url("/images/baclground.jpg"); 
     color: black;
     background-position: center center;
@@ -258,7 +258,7 @@ button:hover {
     .name {
     margin-right: 2vh;
     }
-    body {
+    html {
         background-image: url("/images/background-rotated.jpg");
     }
     .bio {
