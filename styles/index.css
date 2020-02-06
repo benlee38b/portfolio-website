@@ -94,7 +94,7 @@ a:hover {
 }
 .top-nav {
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
 }
@@ -130,6 +130,51 @@ img {
     font-size: 1.8vw;
     text-align: left;
 }
+.external:hover {
+    text-decoration: underline;
+}
+.projects-grid {
+    display: grid;
+    float: right;
+    grid-template-columns: 150px 1fr 1fr 150px; 
+    grid-template-rows: auto 1fr 1fr auto; 
+    position: relative;
+    white-space: nowrap;
+    top: 15vh;
+    grid-row-gap: 2vh;
+    right: 8vw;
+    line-height: 0;
+    height: 45vw;
+    width: 40vw;
+}
+.projects-title {
+    grid-column: span 4;
+    justify-self: center;
+    align-self: center;
+    font-size: 3.5vw;
+}
+.github-link {
+    grid-column: span 4;
+    align-self: center;
+    justify-self: center;
+    font-size: 2.5vw;
+}
+.project-1, .project-2, .project-3, .project-4 {
+    grid-column: span 2;
+    border: solid 4px;
+    border-color: teal;
+    border-radius: 20%;
+    padding: 10vw 5vw;
+    width: 8vw;
+    background-color: whitesmoke;
+    margin: 1vw;
+    margin-top: 0;
+    justify-self: start;
+    text-align: center;
+
+}
+
+
 
  
 @media screen and (max-width: 1580px) {
@@ -145,8 +190,30 @@ img {
     .name {
         margin-right: 5vh;
     }
+    .projects-grid {
+        top: 1vh;
+        padding: 10vw 3vw;
+    }
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1380px) {
+    .projects-grid {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        top: 5vh;
+        right: 5vw;
+        width: 40vw;
+    }
+    .projects-title, .github-link {
+        position: relative;
+        right: 4vw;
+    }
+    .project-1, .project-2, .project-3, .project-4  {
+        width: 20vw;
+    }
+}
+@media screen and (max-width: 1025px) {
     .name {
     margin-right: 2vh;
     }
@@ -163,6 +230,15 @@ img {
     .top-nav {
         background-color: #cbd0d6;
         border-radius: 2%;
+    }
+    .projects-grid {
+        top: 80vw;
+        right: 23vw;
+        transform: scale(1.8);
+        height: 80%
+    }
+    .project-1, .project-2, .project-3, .project-4  {
+        height: 20vw;
     }
 }
 @media screen and (max-width: 469px) {
