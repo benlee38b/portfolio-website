@@ -23,7 +23,7 @@ main.homepage {
     line-height: 0;
     position: relative;
     white-space: nowrap;
-    top: 35vh;
+    top: 33vh;
     grid-row-gap: 0;
     right: 15vw;
 }
@@ -38,20 +38,7 @@ main.homepage {
     grid-column: span 3; 
     font-size: 4.2vh;
     align-self: start;
-}  
-#languages {
-    text-align: center;
-    font-size: 30px;
-    justify-self: left;
-    align-self: end;
-    border-radius: 25%;
-    background-color:#2891C8;
-    padding: 10px;
-    margin-left: 100px;
-    width: 100px;
-}
-    
-
+}     
 .about {
     grid-column: span 1;  
     align-self: end;
@@ -173,7 +160,61 @@ img {
     text-align: center;
 
 }
+.container {
+    float: right;
+    position: relative;
+    top: 8vw;
+    right: 6vw;
+    width: 40vw;
+    border: solid;
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 10%;
+    border-color: teal;
+}
+.contact-title {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    height: 6vw;
+}
+.subheading {
+    font-size: 0.8vw;
+}
+form {
+    font-size: 1.2vw;
+}
+#name, #email {
+    width: 11vw;
+    height: 2.5vw;
+}
+#name, #email, #message {
+    border-radius: 3%;
+}
+.message-input {
+    padding: 2vw;;
+}
 
+#message {
+    width: 30vw;
+    height: 15vw;
+    font-size: 0.8vw;
+}
+.email-input {
+    position: relative;
+    right: 2.2vw;
+}
+fieldset {
+    border: none;
+}
+button {
+    width: 5vw;
+    height: 2vw;
+    border-radius: 10%;
+
+}
+button:hover {
+    background-color: teal;
+}
 
 
  
@@ -239,6 +280,35 @@ img {
     }
     .project-1, .project-2, .project-3, .project-4  {
         height: 20vw;
+    }
+    .container {
+        float: left;
+        top: 30vw;;
+        left: 12vw;
+        height: 85vw;
+        width: 70vw;
+    }
+    form {
+        font-size: 2.5vw;;
+    }
+    .contact-title {
+        font-size: 3vw;
+    }
+    .subheading {
+        font-size: 2vw;;
+    }
+    #name, #email {
+        width: 20vw;
+        height: 5vw;;
+    }
+    #message {
+        width: 50vw;
+        height: 30vw;
+        font-size: 2vw;
+    }
+    button {
+        width: 10vw;
+        height: 4vw;;
     }
 }
 @media screen and (max-width: 469px) {
