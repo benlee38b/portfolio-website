@@ -10,10 +10,11 @@ app.post('/contact', contact);
 app.use('/*', (req, res, next) => {
   next({ status: 404, msg: 'Page Not Found' });
 });
+require('dotenv').config();
 
 app.use((err, req, res, next) => {
   const { msg = 'Internal Server Error', status = 500 } = err;
-  // res.status(status).render('error', { status, msg });
+  res.status(status).render('error', { status, msg });
 });
 
 module.exports = app;
